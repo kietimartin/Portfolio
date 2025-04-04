@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+/* header and navbar styling */
+header {
+    overflow: hidden;
+    height: 100px;
+    position: sticky;
+}
+
+#my-logo {
+    width: 100px;
+    float: left;
+}
+
+#my-logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+nav ul li {
+    padding: 20px;
+    display: block;
+    text-align: center;
+    height: 100px;
+}
+
+/* styling the links */
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+li a:hover {
+    color: black;
+    font-size: 1.5em;
+    text-shadow: 3px 3px 5px black;
+}
+
+li button {
+    border: solid;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 100px;
+}
+
+li button:hover {
+    font-size: 1em;
+    box-shadow: 3px 3px 4px black;
+    border: none;
+}
+
+/* styling the hero section */
+main {
+    padding: 0% 1%;
+}
+
+#hero {
+    /* display: inline; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#hero .right {
+    width: 50%;
+    text-align: center;
+    padding: 90px 0px;
+}
+
+#hero .left {
+    width: 50%;
+}
+
+#hero .left img {
+    width: 100%;
+    height: auto;
+}
+
+/* About section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8%;
+    padding: 2% 15%;
+}
+
+
+/* STYLING THE EDUCATION SECTION */
+#education .edu-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding-left: 5%;
+    overflow: visible;
+}
+
+.edu-container .edu {
+    line-height: 0.8;
+
+}
+
+/* Start of the projects sections
+-Working on carosel and the display cards */
+.project {
+    text-align: center;
+}
+
+.project-cubes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* overflow-x: scroll; */
+}
+
+.project-cube {
+    background-color: white;
+    color: black;
+    height: auto;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.project-cube img {
+    width: 100%;
+}
+
+.project-cube a {
+    color: black;
+    text-decoration: none;
+}
+
+.project-cube a:hover {
+    color: blue;
+    text-shadow: 2px 2px 4px blue;
+}
+
+/* CONTACT SECTION */
+.contact {
+    background-color: black;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    line-height: 0.7;
+    background-color: white;
+    width: 80%;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit {
+    margin: 20px 0px;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 4px;
+    width: 20%;
+    height: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 2px 2px 4px white;
+}
+
+/* footer section */
+footer {
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 770px) {
+    #hero {
+        flex-direction: column;
+    }
+    
+    .project-cubes {
+        flex-direction: column;
+    }
+
+}
